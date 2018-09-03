@@ -1,0 +1,59 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  background-color: #484848;
+  display: table;
+}
+
+.container {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.title {
+  font-size: 180px;
+  font-family: 'Source Code Pro', monospace;
+  color: #96e71a;
+}
+
+@media only screen and (max-width: 800px) {
+  .title {
+    font-size: 80px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .title {
+    font-size: 50px;
+  }
+}
+
+#cursor{
+  -webkit-animation: pulsate 2s ease-in;
+     -moz-animation: pulsate 2s ease-in;
+       -o-animation: pulsate 2s ease-in;
+          animation: pulsate 2s ease-in;
+  -webkit-animation-iteration-count: infinite; 
+     -moz-animation-iteration-count: infinite; 
+       -o-animation-iteration-count: infinite; 
+          animation-iteration-count: infinite; 
+}
+
+@-webkit-keyframes pulsate {
+  0% {opacity: 0.0;}
+  50% {opacity: 1.0;}
+  100% {opacity: 0.0;}
+}
+
+@keyframes pulsate {
+  0% {opacity: 0.0;}
+  50% {opacity: 1.0;}
+  100% {opacity: 0.0;}
+}
